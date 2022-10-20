@@ -1,7 +1,7 @@
 import './Message.css';
 
-export function Message() {
+export function Message(props) {
   return <>
-    <p>кукусики</p></>
+    <p>{props.name}</p></>
 }
 
