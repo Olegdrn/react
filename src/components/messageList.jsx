@@ -2,23 +2,21 @@ import { useState } from 'react';
 
 export function MessageList() {
 
-    const [messages, setMessages] = useState([
-        { author: '' },
-        { text: '' }]);
+    const [messages, setMessages] = useState('');
 
     const changeMessage = (event) => {
-        setMessages(event.target.input.value)
+        setMessages(event.target.value)
     };
 
     return (
         <>
             <p className="paragpHmw">Второе дз:</p>
-            <form onSubmit={changeMessage}>
-                <input placeholder='author' />
-                <button type='submit'>Отправить</button>
+            <form>
+                <input placeholder='author' onChange={changeMessage} />
                 <br />
                 <input placeholder='text' />
-                <button type='submit'>Отправить</button>
+                <button type='button'>Отправить</button>
+                <p>{messages}</p>
             </form>
         </>
     );
