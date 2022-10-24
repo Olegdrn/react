@@ -11,13 +11,6 @@ function App() {
     setName(event.target.value)
   };
 
-  const [messages, setMessages] = useState("");
-  const changeMessage = (event) => {
-    setMessages(event.target.value)
-  };
-
-
-
   return (
     <div className="App">
       <p className="paragpHmw">Первое дз:</p>
@@ -26,12 +19,7 @@ function App() {
       <p className="paragp">Дочерний компонент</p>
       <Message name={name} />
       <hr />
-      <p className="paragpHmw">Второе дз:</p>
-      <form onSubmit={changeMessage}>
-        <input placeholder='Имя' />
-        <button onSubmit={changeMessage} type='submit'>Отправить</button>
-      </form>
-      <MessageList messages={messages} />
+      <MessageList />
     </div >
   );
 }
