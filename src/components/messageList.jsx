@@ -1,8 +1,33 @@
+import { useState } from 'react';
 
-export function MessageList(props) {
-    return <>
-        <p>{props.messages}</p></>
+export function MessageList() {
+
+    const [messages, setMessages] = useState([
+        { author: '' },
+        { text: '' }]);
+
+    const changeMessage = (event) => {
+        setMessages(event.target.input.value)
+    };
+
+    return (
+        <>
+            <p className="paragpHmw">Второе дз:</p>
+            <form onSubmit={changeMessage}>
+                <input placeholder='author' />
+                <button type='submit'>Отправить</button>
+                <br />
+                <input placeholder='text' />
+                <button type='submit'>Отправить</button>
+            </form>
+        </>
+    );
 }
+
+// export function MessageList(props) {
+//     return <>
+//         <p>{props.messages}</p></>
+// }
 
 // import React, { useState } from 'react';
 
