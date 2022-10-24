@@ -11,8 +11,17 @@ function App() {
     setName(event.target.value)
   };
 
+
+  const [user, setUser] = useState([{
+    name: 'Alex'
+  },
+  { age: 23 }])
+
   return (
     <div className="App">
+      {user[0].name}
+      <br />
+      {user[1].age}
       <p className="paragpHmw">Первое дз:</p>
       <p className="paragp">Родитель</p>
       <input onChange={changeName} />
@@ -23,8 +32,6 @@ function App() {
     </div >
   );
 }
-
-
 
 export default App;
 
