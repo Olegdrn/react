@@ -1,0 +1,26 @@
+.blogDetails h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 15px;
+}
+
+.blogDetails p {
+  font-style: oblique;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.blogDetails div {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+
+
+.blogDetails button {
+  background-color: #f1356d;
+  cursor: pointer;
+  border: 0;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
