@@ -1,0 +1,20 @@
+.chats {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.leftSide {
+  background-color: aquamarine;
+}
+
+.messageList {
+  margin-left: 7%;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}

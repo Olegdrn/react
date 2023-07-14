@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "author": "null",
+    "text": "underfined"
+  },
+  {
+    "id": 1,
+    "author": "first test author",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, id."
+  },
+  {
+    "id": 2,
+    "author": "second test author",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, molestias!"
+  },
+  {
+    "id": 3,
+    "author": "third test author",
+    "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, explicabo."
+  }
+]
